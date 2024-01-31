@@ -12,6 +12,7 @@ import { getMessageByChannel } from "../../redux/actions/chatActions";
 import { useDispatch } from "react-redux";
 
 function ChatScreen() {
+  const URL_SERVER = import.meta.env.VITE_URL_SERVER;
   const containerRef = useRef<HTMLDivElement>(null);
   const [messages, setMessages] = useState<MessagesProps[]>([]);
   const [newMessage, setNewMessage] = useState<string>("");
@@ -40,7 +41,7 @@ function ChatScreen() {
       containerRef.current.scrollTop = containerRef.current.scrollHeight;
     }
     setMessages(messageChannel);
-    socket.current = io("http://localhost:8080/");
+    socket.current = io(`${URL_SERVER}`);
 
     socket.current.on("messageReceived", (message: MessagesProps) => {
       setMessages((prevMessages) => [...prevMessages, message]);
