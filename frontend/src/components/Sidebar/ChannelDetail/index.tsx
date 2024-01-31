@@ -19,6 +19,7 @@ interface NavigateProps {
   channelId: string;
 }
 function ChannelDetail({ channelId }: NavigateProps) {
+  const URL_SERVER = import.meta.env.VITE_URL_SERVER;
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -136,7 +137,7 @@ function ChannelDetail({ channelId }: NavigateProps) {
   const dispatch = useAppDispatch();
 
   const socket = useRef<Socket | null>(null);
-  socket.current = io("http://localhost:8080/");
+  socket.current = io(`${URL_SERVER}`);
 
   useEffect(() => {
     dispatch(getChannelById(selectedChannelId));

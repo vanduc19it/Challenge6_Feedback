@@ -21,6 +21,8 @@ interface AllChannelsProps {
 }
 
 function AllChannels({ onNavigate }: AllChannelsProps) {
+
+  const URL_SERVER = import.meta.env.VITE_URL_SERVER;
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const showModal = () => {
@@ -142,7 +144,7 @@ function AllChannels({ onNavigate }: AllChannelsProps) {
     }) || {};
 
   const socket = useRef<Socket | null>(null);
-  socket.current = io("http://localhost:8080/");
+  socket.current = io(`${URL_SERVER}`);
 
   const handleChannelClick = (channel: Channel) => {
     if (user) {
