@@ -1,0 +1,121 @@
+@import "../../assets/styles/variables.scss";
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.card {
+  width: 473.83px;
+  border: 1px solid $gray1-color;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 59px;
+
+  &-image {
+    margin: 48.42px 0 27.46px 0;
+  }
+
+  &-title {
+    color: $gray2-color;
+    width: 318.878px;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: -0.63px;
+    margin-bottom: 14.5px;
+  }
+
+  &-input {
+    color: $gray3-color;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.56px;
+    width: 356.481px;
+    height: 48px;
+    border-radius: 8px;
+    border: 1px solid $gray4-color;
+    padding: 0;
+    margin-bottom: 14.5px;
+  }
+
+  &-input:hover,
+  &-input:focus,
+  &-input:focus-within {
+    border: 1px solid $gray4-color;
+    box-shadow: none;
+  }
+
+  &-icon-mail,
+  &-icon-password,
+  &-icon-eye {
+    padding: 0 10.89px 0 12px;
+  }
+
+  &-button-register {
+    border-radius: 8px;
+    padding: 0 116.5px;
+    width: 356.481px;
+    height: 38px;
+    background: $blue-color;
+    color: $white-color !important;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.56px;
+    margin-bottom: 31.58px;
+    margin-top: 8px;
+  }
+
+  &-text {
+    color: $gray3-color;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.49px;
+    text-align: center;
+  }
+
+  &-text-error {
+    color: $red-color !important;
+    margin: -10px 0 6px 0;
+  }
+
+  &-icon-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20.93px;
+    margin: 22.51px 0 27.07px 0;
+  }
+
+  &-icon-container {
+    width: 42px;
+    height: 42px;
+    border: 1px solid $gray3-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &-icon-social {
+    color: $gray3-color;
+    font-size: 18px;
+  }
+
+  &-link {
+    color: $blue2-color;
+  }
+
+  &-text-group {
+    text-align: center;
+    margin-bottom: 43.07px;
+  }
+}
+.footer {
+  width: 473.83px;
+}

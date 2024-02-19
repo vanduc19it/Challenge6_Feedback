@@ -1,0 +1,27 @@
+@import "../../assets/styles/variables.scss";
+.footer {
+  &-text {
+    color: $gray3-color;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.49px;
+    text-align: center;
+  }
+
+  &-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  &-author {
+    text-decoration-line: underline;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  &-author-link {
+    color: $gray3-color !important;
+  }
+}

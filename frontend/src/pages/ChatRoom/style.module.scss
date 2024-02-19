@@ -1,0 +1,14 @@
+@import "../../assets/styles/variables.scss";
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 22.5%;
+  background: $dark-color;
+}
+.message {
+  width: 77.5%;
+  background: $gray10-color;
+}
