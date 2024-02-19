@@ -1,0 +1,108 @@
+@import "../../assets/styles/variables.scss";
+
+.body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+.profile {
+  &-heading {
+    color: $black-color;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -1.26px;
+  }
+  &-desc {
+    color: $black-color;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.63px;
+  }
+
+  &-card {
+    width: 845.911px;
+    border-radius: 12px;
+    border: 1px solid $gray5-color;
+    margin-top: 44.06px;
+  }
+
+  &-container {
+    padding: 29px 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-text {
+    color: $black-color;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.84px;
+  }
+
+  &-content {
+    color: $gray3-color;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.455px;
+  }
+
+  &-btn-edit {
+    width: 95.343px;
+    height: 38px;
+    border-radius: 12px;
+    border: 1px solid $gray3-color;
+    color: $gray3-color;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.56px;
+  }
+
+  &-title {
+    color: $gray1-color;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.455px;
+  }
+
+  &-info {
+    color: $gray2-color;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.63px;
+    position: absolute;
+    left: 280px;
+  }
+
+  &-group-image {
+    padding: 12px 49px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  &-image {
+    border-radius: 8px;
+    margin-left: 188px;
+    width: 72px;
+    height: 72px;
+    overflow: hidden;
+  }
+
+  &-group {
+    padding: 24px 49px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &-group-image,
+  &-group:not(:last-child) {
+    border-bottom: 1px solid $gray6-color;
+  }
+}

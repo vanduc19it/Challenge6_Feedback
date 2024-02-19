@@ -1,0 +1,173 @@
+@import "../../assets/styles/variables.scss";
+
+.body {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  cursor: pointer;
+}
+
+.back-arrow {
+  margin-top: 2px;
+  font-size: 18px;
+  color: $blue2-color;
+}
+
+.back-text {
+  color: $blue2-color;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: -0.63px;
+}
+
+.profile {
+  &-heading {
+    color: $black-color;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: -1.26px;
+  }
+  &-desc {
+    color: $black-color;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.63px;
+  }
+
+  &-card {
+    width: 845.911px;
+    border-radius: 12px;
+    border: 1px solid $gray5-color;
+    margin-top: 24px;
+  }
+
+  &-container {
+    padding: 31px 49px 26px 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-text {
+    color: $black-color;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: -0.84px;
+  }
+
+  &-text-error {
+    color: $red-color;
+  }
+
+  &-content {
+    color: $gray3-color;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.455px;
+  }
+
+  &-btn-edit {
+    width: 95.343px;
+    height: 38px;
+    border-radius: 12px;
+    border: 1px solid $gray3-color;
+    color: $gray3-color;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.56px;
+  }
+
+  &-title {
+    color: $gray7-color;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.455px;
+  }
+
+  &-input {
+    width: 416.932px;
+    height: 52px;
+    border-radius: 12px;
+    border: 1px solid $gray3-color;
+    color: $gray4-color;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.455px;
+    padding-left: 17px;
+  }
+
+  &-input-bio {
+    width: 416.932px;
+    height: 91.578px;
+    padding: 17px 30px 57px 18px;
+  }
+
+  &-group-image {
+    padding: 0 49px;
+    display: flex;
+    align-items: center;
+    gap: 27.5px;
+    margin-bottom: 33px;
+  }
+  &-image {
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background: $gray10-color;
+    width: 72px;
+    height: 72px;
+  }
+
+  &-camera-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: $white-color;
+    font-size: 24px;
+  }
+
+  &-change-image {
+    color: $gray3-color;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: -0.455px;
+    cursor: pointer;
+  }
+
+  &-group {
+    padding: 0 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  &-group:not(:first-child) {
+    margin-top: 24px;
+  }
+
+  &-btn-save {
+    color: $white-color !important;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: -0.56px;
+    width: 82px;
+    height: 38px;
+    border-radius: 8px;
+    background: $blue-color;
+    margin-bottom: 43px;
+  }
+}
